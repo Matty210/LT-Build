@@ -1,126 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Company Name</title>
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LT Build</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
 </head>
-<body class="bg-gray-50 text-gray-800">
-
-  <!-- Header -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="container mx-auto flex justify-between items-center p-4">
-      <!-- Logo -->
-      <h1 class="text-2xl font-bold text-blue-600">CompanyName</h1>
-
-      <!-- Desktop Nav -->
-      <nav class="hidden md:flex gap-6 text-gray-600">
-        <a href="#services" class="hover:text-blue-600">Services</a>
-        <a href="#portfolio" class="hover:text-blue-600">Portfolio</a>
-        <a href="#contact" class="hover:text-blue-600">Contact</a>
+<body>
+  <div class="page-container">
+    <header class="header">
+      <img class="logo" src="/lt-build.jpg"/>
+      <nav class="nav">
+        <a href="https://www.facebook.com/p/LT-Build-100064135176321/" target="_blank">Reviews</a>
+        <a href="mailto:ltbuild99@gmail.com">Contact</a>
       </nav>
+    </header>
 
-      <!-- Mobile Hamburger Icon -->
-      <button id="menu-btn" class="md:hidden focus:outline-none">
-        <!-- Simple menu icon (3 lines) -->
-        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2"
-             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
-    </div>
+    <section id="intro" class="intro-section section intro">
+      <h2 class="section-heading centered-text">North Wales Construction Services</h2>
+      <h4 style="text-align: center; margin: 1rem;">
+        Denbighshire · Flintshire · Wrexham
+      </h4>
+    </section>
+    
+    <section id="services-gallery" class="services-section section">
+    <h2 class="section-heading">Our Services</h2>
+    <hr>
+    <div class="services-gallery-grid">
+        <div id="services" class="services"></div>
+        <div class="swiper gallery-swiper">
 
-    <!-- Mobile Menu (hidden by default) -->
-    <nav id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
-      <a href="#services" class="block px-4 py-3 text-gray-600 hover:bg-gray-100">Services</a>
-      <a href="#portfolio" class="block px-4 py-3 text-gray-600 hover:bg-gray-100">Portfolio</a>
-      <a href="#contact" class="block px-4 py-3 text-gray-600 hover:bg-gray-100">Contact</a>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="bg-blue-600 text-white text-center py-20">
-    <div class="container mx-auto px-4">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">We Bring Your Ideas to Life</h2>
-      <p class="text-lg md:text-xl mb-8">
-        Professional web development and design for modern businesses.
-      </p>
-      <a href="#contact" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition">
-        Get in Touch
-      </a>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="py-16">
-    <div class="container mx-auto px-4 text-center">
-      <h3 class="text-3xl font-bold mb-10">Our Services</h3>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-lg transition">
-          <h4 class="text-xl font-semibold mb-2">Web Design</h4>
-          <p>Modern, responsive designs that reflect your brand and engage users.</p>
-        </div>
-        <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-lg transition">
-          <h4 class="text-xl font-semibold mb-2">Development</h4>
-          <p>Fast, secure websites using the latest technologies and best practices.</p>
-        </div>
-        <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-lg transition">
-          <h4 class="text-xl font-semibold mb-2">Maintenance</h4>
-          <p>Ongoing support, updates, and optimization to keep your site running smoothly.</p>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="gallery/ltb1.jpg"></div>
+            <div class="swiper-slide"><img src="gallery/ltb2.jpg"></div>
+            <div class="swiper-slide"><img src="gallery/ltb3.jpg"></div>
+          </div>
+          <!-- Optional but recommended -->
+          <div class="swiper-pagination"></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="bg-gray-100 py-16">
-    <div class="container mx-auto px-4 text-center">
-      <h3 class="text-3xl font-bold mb-10">Previous Work</h3>
-      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-        <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
-          <img src="https://via.placeholder.com/400x250" alt="Project 1" class="w-full h-48 object-cover" />
-          <div class="p-4">
-            <h4 class="font-semibold mb-2">Project One</h4>
-            <p class="text-sm text-gray-600">E-commerce platform redesign</p>
-          </div>
-        </div>
-        <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
-          <img src="https://via.placeholder.com/400x250" alt="Project 2" class="w-full h-48 object-cover" />
-          <div class="p-4">
-            <h4 class="font-semibold mb-2">Project Two</h4>
-            <p class="text-sm text-gray-600">Corporate website for a tech firm</p>
-          </div>
-        </div>
-        <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
-          <img src="https://via.placeholder.com/400x250" alt="Project 3" class="w-full h-48 object-cover" />
-          <div class="p-4">
-            <h4 class="font-semibold mb-2">Project Three</h4>
-            <p class="text-sm text-gray-600">Creative portfolio website</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <section id="contact" class="contact-section section">
+      <h2 class="section-heading">Contact Us</h2>
+      <hr>
+      <h4>All aspects of building work undertaken - no job too big or small!</h4>
+      <h4>Enquire for a free quote:</h4>
+      <a href="mailto:ltbuild99@gmail.com" class="icon-text centered-content p-link"><span class="iconify" data-icon="line-md:email"></span> ltbuild99@gmail.com</a>
+      <p class="icon-text centered-content"><span class="iconify" data-icon="solar:phone-linear"></span> 07435 655405</p>
+   </section>
+  
+  </div>
 
-  <!-- Footer -->
-  <footer id="contact" class="bg-blue-700 text-white py-8">
-    <div class="container mx-auto px-4 text-center">
-      <h4 class="text-xl font-semibold mb-2">Contact Us</h4>
-      <p>Email: info@company.com | Phone: (123) 456-7890</p>
-      <p class="mt-4 text-sm text-blue-200">© 2025 Company Name. All rights reserved.</p>
-    </div>
-  </footer>
+  <script src="services.js"></script>
 
-  <!-- JavaScript for Mobile Menu Toggle -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
+    new Swiper('.gallery-swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      slidesPerView: 1,
+      spaceBetween: 10
     });
   </script>
 

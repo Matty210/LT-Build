@@ -1,0 +1,9 @@
+[
+  { "icon": "ph:solar-roof", "text": "Roofing" },
+  { "icon": "mdi:hammer-screwdriver", "text": "Joinery" },
+  { "icon": "fluent-emoji-high-contrast:carpentry-saw", "text": "Carpentry" },
+  { "icon": "temaki:bicycle-shed", "text": "Bespoke Sheds" },
+  { "icon": "material-symbols:home-and-garden-outline-rounded", "text": "Summer Houses" },
+  { "icon": "mdi:home-roof", "text": "Fascia & Soffit" },
+  { "icon": "material-symbols-light:garden-cart-rounded", "text": "Landscaping" }
+]
