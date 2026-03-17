@@ -93,7 +93,7 @@ a:hover {
 }
 
 .intro-section{
-    min-height: 10vh;
+    min-height: 5vh;
 }
 
 .services-section{
@@ -136,7 +136,7 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
 
