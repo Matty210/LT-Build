@@ -39,6 +39,10 @@ html, body {
     background-blend-mode: multiply; 
 }
 
+h1 { font-size: 2rem;}
+h2 { font-size: 1.5rem;}
+h4 { font-size: 1.2rem;}
+
 hr{
     border: 0.8px solid var(--border-colour);
 }
@@ -136,12 +140,12 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
 
 .iconify {
-    font-size: 1.6rem;
+    font-size: 3rem;
 }
 
 .gallery {
